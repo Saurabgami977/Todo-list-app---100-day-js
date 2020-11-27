@@ -1,0 +1,147 @@
+body {
+  background: #f5f5f5;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+}
+
+.heading {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.feedback {
+  background-color: rgb(255, 218, 218);
+  border-radius: 5px;
+  position: absolute;
+  top: 60px;
+  width: 50vw;
+  padding: 0;
+  margin: 5px ;
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.input {
+  width: 50vw;
+  display: flex;
+  position: absolute;
+  top: 150px;
+}
+
+.task {
+    border: 2px solid black;
+    border-color: #80cfa9;
+    flex: 2;
+    padding: 5px 2px;
+}
+
+.button {
+    border: 3px solid #80cfa9;
+  background: cyan;
+  cursor: pointer;
+  margin: 0px 3px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: none;
+  background: rgb(116, 240, 240);
+}
+
+.lists {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin: 0px;
+  padding: 0;
+  height: 7vh;
+}
+
+.itemName {
+  flex: 5;
+}
+
+.icon {
+  height: 1vw;
+  width: 1vw;
+  border: 2px solid black;
+  margin: 3px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.removeAll {
+  position: fixed;
+  bottom: 5px;
+  padding: 5px;
+  margin: 0 0;
+  border: 3px solid black;
+  background: cyan;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removeAll:hover {
+  background: rgb(116, 240, 240);
+}
+
+/* if screen size is 1000 or greater */
+@media screen and (max-width: 1000px) {
+    .box, .heading, .feedback, .input, .item{
+        width: 80vw;
+    }
+    .icon {
+        width: 4vh;
+        height: 4vh;
+    }
+}
+
+/* if screen size is less than or equal to 600px */
+@media screen and (max-width: 600px) {
+    .box, .heading, .feedback, .input, .item{
+        width: 90vw;
+    }
+    .icon {
+        width: 4vw;
+        height: 4vw;
+    }
+}
+@media screen and (max-width: 300px) {
+    .icon {
+        width: 6vw;
+        height: 6vw;
+    }
+}
