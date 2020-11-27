@@ -157,9 +157,16 @@ body {
 footer {
   color: black;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 footer a {
+  font-size: 1.9rem;
   color: red;
-  
+  text-decoration: none;
+  background-color: rgb(6, 143, 255);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  padding: 3px 2px;
 }
