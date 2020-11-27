@@ -38,7 +38,7 @@ body {
   top: 60px;
   width: 50vw;
   padding: 0;
-  margin: 5px ;
+  margin: 5px;
   text-align: center;
   color: red;
   font-size: 1.5rem;
@@ -53,14 +53,14 @@ body {
 }
 
 .task {
-    border: 2px solid black;
-    border-color: #80cfa9;
-    flex: 2;
-    padding: 5px 2px;
+  border: 2px solid black;
+  border-color: #80cfa9;
+  flex: 2;
+  padding: 5px 2px;
 }
 
 .button {
-    border: 3px solid #80cfa9;
+  border: 3px solid #80cfa9;
   background: cyan;
   cursor: pointer;
   margin: 0px 3px;
@@ -120,28 +120,46 @@ body {
 
 /* if screen size is 1000 or greater */
 @media screen and (max-width: 1000px) {
-    .box, .heading, .feedback, .input, .item{
-        width: 80vw;
-    }
-    .icon {
-        width: 4vh;
-        height: 4vh;
-    }
+  .box,
+  .heading,
+  .feedback,
+  .input,
+  .item {
+    width: 80vw;
+  }
+  .icon {
+    width: 4vh;
+    height: 4vh;
+  }
 }
 
 /* if screen size is less than or equal to 600px */
 @media screen and (max-width: 600px) {
-    .box, .heading, .feedback, .input, .item{
-        width: 90vw;
-    }
-    .icon {
-        width: 4vw;
-        height: 4vw;
-    }
+  .box,
+  .heading,
+  .feedback,
+  .input,
+  .item {
+    width: 90vw;
+  }
+  .icon {
+    width: 4vw;
+    height: 4vw;
+  }
 }
 @media screen and (max-width: 300px) {
-    .icon {
-        width: 6vw;
-        height: 6vw;
-    }
+  .icon {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+footer {
+  color: black;
+  text-align: center;
+}
+
+footer a {
+  color: red;
+  
 }
