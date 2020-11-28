@@ -14,6 +14,7 @@ let localToDo;
 
 
 button.addEventListener('click', add);
+
 function add() {
     if (inputToDo.value == '') {
         setTimeout(() => {
@@ -23,6 +24,7 @@ function add() {
     } else {
         tasks.push(inputToDo.value);
         localStorage.setItem('toDo', JSON.stringify(tasks));
+        location.reload();
     }
     setTimeout(() => {
         feedback.style.display = 'none';
