@@ -60,8 +60,9 @@ window.onload = get();
 //get function to get the items in local storage
 function get() {
     //if localstorage is empty
-    if (JSON.parse(localStorage.getItem('toDo')).length <= 0) {
+    if (JSON.parse(localStorage.getItem('toDo') === null || localStorage.getItem('toDo')).length <= 0 || localStorage.length == 0) {
         lists.innerHTML = `<h1> Nothing to Show Please add items </h1>`
+        console.log('delete')
         //setting all the localstorage item  into tasks array by parsing them
     } else {
         //pasing localstorage items
@@ -124,10 +125,11 @@ removeAll.addEventListener('click', () => {
     //confirming user if they really wanna delete all the items added by them at once
     if (window.confirm('Are you sure you wanna delete all the items') == true) {
         //clearing localstorage
-        localStorage.removeItem('toDo');
+        localStorage.clear();
         // setting tasks array to empty
         tasks = [];
         //Running get function to check for localstorage and updating dom
-        get()
+        location.reload();
+        get();
     }
 })
