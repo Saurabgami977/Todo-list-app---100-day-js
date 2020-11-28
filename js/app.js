@@ -1,7 +1,7 @@
 
 // grabbing dom element by its respective ID
 let button = document.getElementById('button');
-let inputToDo = document.getElementById('inputToDo');
+let inputToDo = document.getElementById('inputToDoo');
 let lists = document.getElementById('lists');
 let feedback = document.getElementById('feedback');
 let removeAll = document.getElementById('removeAll');
@@ -22,6 +22,9 @@ inputToDo.addEventListener('keyup', (e) => {
         button.click();
     }
 })
+
+// selecting or putting cursor inside input 
+document.getElementById(inputToDoo.id).select()
 
 //Adding event listner on clicki in Add button
 button.addEventListener('click', add);
@@ -46,6 +49,7 @@ function add() {
     //setting timeout to trigger the display to none of feedback after 3 seconds
     setTimeout(() => {
         feedback.style.display = 'none';
+        location.reload();
     }, 3000);
     inputToDo.value = '';
     //running functions as callback
