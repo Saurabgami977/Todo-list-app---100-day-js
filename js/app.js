@@ -32,7 +32,7 @@ button.addEventListener('click', add);
 //Function to run while button clicked
 function add() {
     // setting time out function to trigger the display = 'block' of feedback if input value is empty
-    if (inputToDo.value == '') {
+    if (inputToDo.value.trim()  == '') {
         setTimeout(() => {
             feedback.style.display = 'block';
         }, 100);
